@@ -1,0 +1,19 @@
+<!-- <p>promo-code works!</p> -->
+<div class="promotion">
+  <label for="promo-code">Have A Promo Code?</label>
+</div>
+<div class="p-inputgroup">
+  <input
+    type="text"
+    pInputText
+    [(ngModel)]="promoCode"
+    (keyup.enter)="applyPromoCode()"
+  />
+  <button
+    type="button"
+    pButton
+    pRipple
+    icon="pi pi-angle-right"
+    (click)="applyPromoCode()"
+  ></button>
+</div>

@@ -1,0 +1,39 @@
+<!-- <p>product-list works!</p> -->
+<p-table [value]="products">
+  <ng-template pTemplate="body" let-product>
+    <tr>
+      <td>
+        <img [src]="product.thumbnail" width="250" />
+      </td>
+      <td colspan="2">
+        <div class="detail">
+          <div class="name">
+            <a href="#">{{ product.name }}</a>
+          </div>
+          <div class="description">{{ product.description }}</div>
+          <div class="price">{{ product.price | currency }}</div>
+        </div>
+      </td>
+      <td>
+        <div class="quantity">
+          <input
+            type="number"
+            #inputQuantityElement
+            (input)="inputQuantity(inputQuantityElement, product.id)"
+            [value]="product.quantity"
+          />
+        </div>
+      </td>
+      <td>
+        <button
+          pButton
+          pRipple
+          type="button"
+          icon="pi pi-times"
+          class="p-button-rounded p-button-danger p-button-text"
+          (click)="removeProduct(product.id)"
+        ></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

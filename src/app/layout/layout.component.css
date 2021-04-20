@@ -1,0 +1,70 @@
+/* @import '../../assets/fonts/Roboto-Light.ttf'; */
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../../assets/fonts/Roboto-Medium.ttf') format('truetype');
+}
+.container {
+  width: 100%;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Roboto-Medium';
+}
+::ng-deep .p-breadcrumb {
+  border: none;
+  padding: 0;
+}
+::ng-deep .p-inputgroup input:first-child {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+::ng-deep .p-fluid .p-inputgroup .p-button.p-button-icon-only {
+  width: 5rem;
+}
+::ng-deep .p-inputgroup button:last-child {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.detail {
+  padding: 0 0.5rem;
+  line-height: 2.2rem;
+}
+.detail .name {
+  font-size: 1.2rem;
+}
+.detail .description {
+    color: #7d7d7d;
+    font-size: 1rem;
+  }
+  
+  .detail .price {
+    font-size: 1.5rem;
+  }
+.promotion > label {
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+::ng-deep .quantity input {
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 2px solid #ddd;
+  text-align: center;
+  margin-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  a:hover {
+    color: #f58551;
+  }
+  .empty-product {
+    text-align: center;
+  }

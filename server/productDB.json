@@ -1,0 +1,28 @@
+{
+  "datas": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S21 Ultra 5G, 128GB",
+      "description": "SM-G998B/DS",
+      "thumbnail": "https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/711/10048377-dien-thoai-samsung-galaxy-s21-ultra-12gb-128gb-den-1.jpg",
+      "price": 905.99,
+      "quantity": 15
+    },
+    {
+      "id": 2,
+      "name": "iPhone 12 Pro, 128GB",
+      "description": "iPhone 12 Pro 128GB, Black",
+      "thumbnail": "https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/698/10047716-dien-thoai-iphone-12-pro-128gb-xanh-1.jpg",
+      "price": 1215.99,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "iPhone 12, 128GB",
+      "description": "iPhone 12 128GB, White",
+      "thumbnail": "https://cdn.nguyenkimmall.com/images/thumbnails/600/336/detailed/698/10047704-dien-thoai-iphone-12-128gb-trang-1.jpg",
+      "price": 965.99,
+      "quantity": 1
+    }
+  ]
+}

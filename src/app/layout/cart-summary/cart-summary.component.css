@@ -1,0 +1,17 @@
+.summary {
+  font-size: 1.2rem;
+}
+ul {
+  list-style-type: none;
+}
+.summary ul li {
+  padding: 0.5rem 0;
+}
+.summary ul li span {
+  display: inline-block;
+  width: 30%;
+}
+
+.summary ul li.total {
+  font-weight: bold;
+}

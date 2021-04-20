@@ -1,0 +1,42 @@
+<section class="container">
+  <app-cart-header [numberItems]="numberItems"></app-cart-header>
+  <hr />
+</section>
+<section class="container">
+  <app-product-list
+    [products]="products"
+    (onRemoveProduct)="handleRemoveProduct($event)"
+    (onUpdateProduct)="handleUpdateProduct($event)"
+  ></app-product-list>
+  <div class="empty-product" *ngIf="products.length === 0">
+    <h3>There are no products in your cart.</h3>
+    <button
+      pButton
+      label="Shopping now"
+      style="width: 20%"
+      class="p-button-rounded"
+    ></button>
+  </div>
+  <hr />
+</section>
+
+<section class="container">
+  <div class="p-fluid p-grid">
+    <div class="p-col-1"></div>
+    <div class="p-col-4">
+      <app-promo-code
+        (onApplyPromeCode)="handleApplyPromoCode($event)"
+      ></app-promo-code>
+    </div>
+    <div class="p-col-1"></div>
+    <div class="p-col-4">
+      <app-cart-summary
+        [tax]="tax"
+        [subTotal]="subTotal"
+        [total]="total"
+        [discount]="discount"
+      ></app-cart-summary>
+    </div>
+    <div class="p-col-2"></div>
+  </div>
+</section>
